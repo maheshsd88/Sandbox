@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<http:listener-connection host="0.0.0.0" port="8082" />
 	</http:listener-config>
 	<flow name="demo-cicd-22aug2021Flow" doc:id="13971fc5-6aa0-4d4b-b083-6bb66f73c7b6" >
-		<http:listener doc:name="Listener" doc:id="9e6edf34-16eb-4274-bd52-0b29ab0a006a" config-ref="HTTP_Listener_config1" path="/democicd"/>
+		<http:listener doc:name="Listener" doc:id="9e6edf34-16eb-4274-bd52-0b29ab0a006a" config-ref="HTTP_Listener_config" path="/cicddemo"/>
 		<ee:transform doc:name="Transform Message" doc:id="72a5b4e8-e768-4d4b-90c9-a50500202f12" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
